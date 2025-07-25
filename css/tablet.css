@@ -1,9 +1,32 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-   
   }
-/* #region Feature */
+
+  /* #region Hero */
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero/dark-bgt@1x.webp");
+
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
+  }
+
+  .title-hero {
+    
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+  /* #endregion */
+
+  /* #region Feature */
   .list-feature {
     max-width: 736px;
     flex-wrap: wrap;
@@ -19,8 +42,14 @@
   .feature-title {
     text-align: start;
   }
-  
+
   /* #endregion */
+}
 
-
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url("../images/hero/dark-bgt@2x.webp");
+  }
 }
