@@ -1,9 +1,4 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
-  font-size: 16px;
-}
+
 /* #region reset */
 
 h1,
@@ -45,23 +40,9 @@ input {
 }
 
 /* #endregion */
-.text {
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.container {
-  max-width: 1158px;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
+
+
 
 /* #region Header */
 
@@ -235,74 +216,15 @@ input {
 
 /* #region Feature */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
-.feature-icon {
-  min-width: 64px;
-  min-height: 64px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-.list-feature {
-  width: 100%;
-  max-width: 1128px;
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 
-.item-feature {
-  width: calc((100% - 3 * 24px) / 4);
-}
 
-.section-title {
-  color: #2e2f42;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
 
-.title-list {
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
 
-.feature-title {
-  margin-bottom: 8px;
-  text-align: start;
-}
 
-.icon-border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  background-color: #f4f4fd;
-  margin-bottom: 8px;
-}
+
+
 /* #endregion */
 
 /* #region Card */
