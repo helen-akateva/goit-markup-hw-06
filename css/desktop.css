@@ -62,13 +62,28 @@
   .item-feature {
     width: calc((100% - 3 * 24px) / 4);
   }
+    .feture-text {
+      font-weight: 400;
+    }
   /* #endregion */
+
+  /* #region Card */
+
+  .list-card {
+    gap: 24px;
+    max-width: 1158px;
+  }
+  /* #endregion */
+
+
 }
 
 @media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url("../images/hero/dark-bgd@2x.webp");
   }
 }

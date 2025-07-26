@@ -44,6 +44,19 @@
   }
 
   /* #endregion */
+
+/* #region Card */
+.list-card {
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 64px;
+  column-gap: 24px;
+  max-width: 736px; 
+}
+
+/* #endregion */
+
+
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
