@@ -96,7 +96,7 @@
 
   .social-media {
     align-items: flex-start;
-    margin-left: 24px;
+  
   }
 
   .email-input-footer {
@@ -104,6 +104,7 @@
   }
   .footer-input {
     width: 264px;
+    margin-bottom: 0;
   }
 .footer-form {
   display: flex;
