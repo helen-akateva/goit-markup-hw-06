@@ -56,7 +56,13 @@
 
 /* #endregion */
 
+/* #region Portfolio */
 
+.img-portfolio {
+  width: 356px;
+    height: 300px;
+}
+/* #endregion */
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
