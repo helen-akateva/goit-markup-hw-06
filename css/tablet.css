@@ -17,7 +17,6 @@
   }
 
   .title-hero {
-    
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -45,30 +44,52 @@
 
   /* #endregion */
 
-/* #region Card */
-.list-card {
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 64px;
-  column-gap: 24px;
-  max-width: 736px; 
-}
+  /* #region Card */
+  .list-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+    max-width: 736px;
+  }
 
-/* #endregion */
+   
 
-/* #region Portfolio */
+  /* #endregion */
 
-.img-portfolio {
-  width: 356px;
+  /* #region Portfolio */
+
+  .img-portfolio {
+    width: 356px;
     height: 300px;
-}
-/* #endregion */
+  }
+
+    .list-portfolio {
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 72px;
+      column-gap: 24px;
+      max-width: 736px;
+    }
+
+    .item-portfolio {
+      width: calc((100% - 24px * 1) / 2);
+    }
+ 
+  /* #endregion */
+
+    /* #region Footer */
+  
+    
+    /* #endregion */
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        url("../images/hero/dark-bgt@2x.webp");
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero/dark-bgt@2x.webp");
   }
 }

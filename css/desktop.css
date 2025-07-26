@@ -62,9 +62,9 @@
   .item-feature {
     width: calc((100% - 3 * 24px) / 4);
   }
-    .feture-text {
-      font-weight: 400;
-    }
+  .feture-text {
+    font-weight: 400;
+  }
   /* #endregion */
 
   /* #region Card */
@@ -73,16 +73,35 @@
     gap: 24px;
     max-width: 1158px;
   }
+
+
   /* #endregion */
 
-/* #region Portfolio */
+  /* #region Portfolio */
 
-.img-portfolio {
-  width: 360px;
+  .img-portfolio {
+    width: 360px;
     height: 300px;
-}
-/* #endregion */
-}
+  }
+
+    .list-portfolio {
+      max-width: 1128px;
+      column-gap: 24px;
+      row-gap: 48px;
+    }
+
+        .item-portfolio {
+          width: calc((100% - 24px * 2) / 3);}
+          
+  /* #endregion */
+
+    /* #region Footer */
+  
+   
+    /* #endregion */
+    }
+
+        
 
 @media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
