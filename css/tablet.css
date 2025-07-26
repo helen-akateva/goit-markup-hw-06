@@ -53,8 +53,6 @@
     max-width: 736px;
   }
 
-   
-
   /* #endregion */
 
   /* #region Portfolio */
@@ -64,24 +62,56 @@
     height: 300px;
   }
 
-    .list-portfolio {
-      flex-direction: row;
-      flex-wrap: wrap;
-      row-gap: 72px;
-      column-gap: 24px;
-      max-width: 736px;
-    }
+  .list-portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    max-width: 736px;
+  }
 
-    .item-portfolio {
-      width: calc((100% - 24px * 1) / 2);
-    }
- 
+  .item-portfolio {
+    width: calc((100% - 24px * 1) / 2);
+  }
+
   /* #endregion */
 
-    /* #region Footer */
-  
-    
-    /* #endregion */
+  /* #region Footer */
+  .footer-container {
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: start;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .text-footer {
+    max-width: 264px;
+  }
+  .footer-logo-text {
+    margin-left: 108px;
+  }
+
+  .social-media {
+    align-items: flex-start;
+    margin-left: 24px;
+  }
+
+  .email-input-footer {
+    margin-left: 108px;
+  }
+  .footer-input {
+    width: 264px;
+  }
+.footer-form {
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+  /* #endregion */
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
