@@ -103,6 +103,20 @@
 
   .footer-logo-text {
     margin-right: 120px;
+    margin-left: 0;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+    flex-wrap: inherit;
+    gap: 0;
+  }
+
+  .footer-input {
+    opacity: 1;
+  }
+  .email-input-footer {
+    margin-left: 80px;
   }
   /* #endregion */
 }
