@@ -56,6 +56,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* #endregion */
 
 /* #region reset */
@@ -78,6 +79,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #2e2f42;
 }
 
 button {
@@ -344,14 +346,12 @@ input {
   justify-content: space-between;
   flex-direction: column;
   gap: 72px;
-  
 }
 
 .text-footer {
   color: #f4f4fd;
   max-width: 288px;
   text-align: start;
-
 }
 
 .logo-white {
@@ -369,8 +369,6 @@ input {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-around;
-  
-  
 }
 .text-social {
   font-weight: 500;
@@ -411,8 +409,8 @@ input {
 }
 
 .email-input-footer {
-    margin-left: 0;
-      margin-top: 0;
+  margin-left: 0;
+  margin-top: 0;
 }
 
 .subscribe-text {
@@ -467,6 +465,7 @@ input {
 /* #endregion */
 
 /* #region Form */
+
 .backdrop {
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
@@ -591,7 +590,7 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus+.modal-form-icon {
+.modal-form-input:focus + .modal-form-icon {
   fill: #4d5ae5;
 }
 
@@ -653,7 +652,7 @@ input {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type="checkbox"]:checked+label .modal-form-checkbox {
+input[type="checkbox"]:checked + label .modal-form-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -664,5 +663,84 @@ input[type="checkbox"]:checked+label .modal-form-checkbox {
   color: #4d5ae5;
 }
 
+/* #endregion */
+
+/* #region Mobile menu */
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 72px 24px 40px 16px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu .mobile-menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 50%;
+}
+
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: auto;
+}
+
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu-link.active {
+  color: #404bbf;
+}
+
+.mobile-menu-contacts {
+  margin-bottom: 48px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contacts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.contacts-item:first-child .contacts-link {
+  color: #4d5ae5;
+}
+
+.icon-mobile {
+  gap: 40px;
+}
+
+.circle-mobile:hover,
+.circle-mobile:focus {
+  background-color: #404bbf;
+}
 
 /* #endregion */

@@ -11,12 +11,17 @@
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+@media screen and (min-width: 768px) {
+  .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
 }
+  
+
+
 
 .list-nav {
   display: flex;
@@ -27,10 +32,16 @@
   margin-right: 0;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .list-nav {
+    display: none;
+  }
+}
+
 .page-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: row;
   gap: 0px;
 }
@@ -40,6 +51,25 @@
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
+}
+
+@media screen and (min-width: 768px) {
+  .list-address{
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .list-address {
+      flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .list-address {
+    display: none;
+  }
 }
 
 .logo {
@@ -58,7 +88,20 @@
 }
 
 .logo-nav {
+  padding: 16px 0;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .logo-nav {
+    margin-right: 120px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+.logo-nav {
   margin-right: 76px;
+}
 }
 
 .logo-dark {
@@ -94,18 +137,33 @@
   color: #404bbf;
 }
 
-.page-address {
-  font-style: normal;
-}
+
 
 .link-address {
   color: #434455;
   font-weight: 400;
-  line-height: 1.5;
+  
   font-style: normal;
   letter-spacing: 0.02em;
   margin-right: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .link-address {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.04em;
+      
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .link-address {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+  }
 }
 
 .link-address:focus,
@@ -117,8 +175,28 @@
   color: #404bbf;
 }
 
+
+
+
+
+.mobile-menu-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+.header .mobile-menu-btn {
+  display: none;
+}
+}
+
 /* #endregion */
-
-
-
-
