@@ -977,7 +977,7 @@ input {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   width: 288px;
   min-height: 623px;
@@ -992,11 +992,19 @@ input {
 
 @media only screen and (min-width: 768px) {
   .modal {
+    top: 55%;
     width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px;
   }
 }
+
+@media only screen and (min-width: 1158px) {
+  .modal {
+    top: 50%;
+  }
+}
+
 
 .modal-btn {
   position: absolute;
@@ -1134,10 +1142,11 @@ input {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.16;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+
 
 .modal-form-checkbox {
   display: inline-flex;
@@ -1162,7 +1171,9 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
 }
 
 .privacy-link {
+  line-height: 1.33;
   text-decoration: underline;
+  text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
 
