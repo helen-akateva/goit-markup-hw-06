@@ -96,7 +96,6 @@
 
   .social-media {
     align-items: flex-start;
-  
   }
 
   .email-input-footer {
@@ -106,12 +105,24 @@
     width: 264px;
     margin-bottom: 0;
   }
-.footer-form {
-  display: flex;
-  gap: 24px;
-  flex-direction: row;
-  align-items: flex-end;
-}
+  .footer-form {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  /* #endregion */
+
+  /* #region Form */
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px;
+  }
+
+  .modal-slogan {
+    max-width: 360px;
+  }
   /* #endregion */
 }
 
