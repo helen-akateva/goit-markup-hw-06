@@ -1005,7 +1005,6 @@ input {
   }
 }
 
-
 .modal-btn {
   position: absolute;
   top: 24px;
@@ -1139,19 +1138,23 @@ input {
 }
 
 .modal-form-agreement {
-  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.modal-form-agreement-text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-
 .modal-form-checkbox {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   margin-right: 8px;
